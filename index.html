@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Imagenes/Logo.png">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+
+    <!--Encabezado-->
+    <header class="encabezado">
+        <div class="encabezado__1">
+            <img class="logo-a" src="Imagenes/Logo.png" alt="Logo de alura">
+
+            <h1 class="titulo">Encriptador de texto</h1>
+        </div>
+    </header>
+
+    <main class="contenido">
+
+        <section class="cuadro-ezquierdo">       
+            <textarea class="cuadro-ezquierdo__texto" id="inputTexto" cols="55" rows="11" placeholder="Ingrese el texto aqui: "></textarea>
+            <div class="aviso">
+                <p>Solo letras minúsculas y sin acento</p> 
+            </div>
+            <div class="botones">         
+                <button class="botones__encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="botones__desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="cuadro-derecho">
+            <textarea class="cuadro-derecho__texto" id="mensaje" cols="25" rows="12" placeholder="Ningun mensaje fue encontrado"></textarea>
+            <div class="botones">
+                <button class="botones__copiar" id="copiar" onclick="copiar()">Copiar</button>
+            </div>    
+        </section>
+    </main> 
+
+    <footer class="pieDe-pagina">
+        <p>&copy Desarrollado por Roger || Oct. de 2022</p>
+
+        <ul class="pieDe-pagina__social">
+            <li class="pieDe-pagina__ico"><a href="https://www.linkedin.com/in/roger-18-dev" target="_blank"><img src="Imagenes/linkedin.svg" alt="mi linkedin"></a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html> 

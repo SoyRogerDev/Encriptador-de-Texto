@@ -1,0 +1,124 @@
+
+.encabezado{
+    background: rgb(228,81,81);
+    opacity: 0.85;
+}
+
+.encabezado__1{
+    padding: 1rem;
+}
+
+.logo-a{
+    width: 15%; 
+}
+
+.titulo{
+    position: absolute;
+    display: inline;
+    margin-left: 90px;
+    /*Efecto*/
+    width: 20ch;
+    animation: typing 2s steps(20), effect .6s step-end infinite alternate;
+    white-space: nowrap;
+    border-right: 4px solid;
+    font-family: monospace;
+    font-size: 70px;
+}
+
+@keyframes typing{
+from{
+    width: 0;
+}
+}
+@keyframes effect{
+50%{
+    border-color: rgb(255, 255, 255);
+}
+}
+
+.contenido{
+    background: rgb(228,81,81);
+    opacity: 0.89;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.cuadro-ezquierdo{
+}
+
+.cuadro-ezquierdo__texto{
+    background: #F1C3C3;
+    padding: .90rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border-style: none;
+    resize: none;
+    box-shadow: inset 5px 5px 12px 0 rgb(3 2 0 / 15%);
+
+}
+
+.aviso{
+    font-size: .90rem;
+}
+
+.botones__encriptar{
+    padding: 5px 50px;
+    border-radius: 8px;
+}
+.botones__encriptar:hover{
+    background: #195A78 ;
+    color: #FFFFFF;
+    border: 3px solid #6ab1c9;
+    font-weight: bold;
+}
+
+.botones__desencriptar{
+    padding: 5px 50px;
+    border-radius: 8px
+}
+.botones__desencriptar:hover{
+    background: #195A78 ;
+    color: #FFFFFF;
+    border: 3px solid #6ab1c9;
+    font-weight: bold;
+}
+
+.cuadro-derecho{
+    margin-left: 200px;
+}
+.cuadro-derecho__texto{
+    background:  #F1C3C3;
+    padding: .90rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border-style: none;
+    resize: none;
+    box-shadow: inset 5px 5px 12px 0 rgb(3 2 0 / 15%);
+}
+
+.botones{
+    text-align: center;
+    padding: .5rem;
+}
+.botones__copiar{
+    padding: 5px 50px;
+    border-radius: 8px;
+    display: none;      
+}
+
+.botones__copiar:hover{
+    background: #195A78 ;
+    color: #FFFFFF;
+    border: 3px solid #6ab1c9;
+    font-weight: bold;
+}
+
+.pieDe-pagina{  
+    align-items: center;
+    background: rgb(228,81,81);
+    opacity: 0.85;
+    display: flex;
+    flex-direction: column;
+    padding: .20rem;
+}
